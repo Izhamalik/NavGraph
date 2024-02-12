@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/splashFragment"
+        android:title="Splash"
+        android:icon="@drawable/bnv_splash" />
+    <item
+        android:id="@+id/imagesFragment"
+        android:title="Images"
+        android:icon="@drawable/bnv_image" />
+    <item
+        android:id="@+id/fullImageFragment"
+        android:title="Full"
+        android:icon="@drawable/bnv_full" />
+    <item
+        android:id="@+id/exitFragment"
+        android:title="Exit"
+        android:icon="@drawable/bnv_exit" />
+
+</menu>

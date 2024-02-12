@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.izharmalik.taskapp.kotlin.fragment.SplashFragment"
+        android:label="Splash"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/toImageFragment"
+            app:destination="@id/imagesFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/imagesFragment"
+        android:name="com.izharmalik.taskapp.kotlin.fragment.ImagesFragment"
+        android:label="Images"
+        tools:layout="@layout/fragment_images">
+        <action
+            android:id="@+id/toFullImageFragment"
+            app:destination="@id/fullImageFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fullImageFragment"
+        android:name="com.izharmalik.taskapp.kotlin.fragment.FullImageFragment"
+        android:label="Full"
+        tools:layout="@layout/fragment_full_image">
+        <action
+            android:id="@+id/toExitFragment"
+            app:destination="@id/exitFragment" />
+        <argument
+            android:name="photos"
+            app:argType="com.izharmalik.taskapp.kotlin.api.Photos" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/exitFragment"
+        android:name="com.izharmalik.taskapp.kotlin.fragment.ExitFragment"
+        android:label="Exit"
+        tools:layout="@layout/fragment_exit">
+
+    </fragment>
+</navigation>
